@@ -1,0 +1,18 @@
+{
+  "knowledge_base": [
+    {
+      "context": "return policy",
+      "qa_pairs": {
+        "What is your return policy?": "Our return policy allows returns within 30 days of purchase. Please ensure the item is in its original condition.",
+        "Can I return an item after 30 days?": "Unfortunately, returns are not accepted after 30 days from the date of purchase."
+      }
+    },
+    {
+      "context": "shipping information",
+      "qa_pairs": {
+        "How long does shipping take?": "Shipping typically takes 5-7 business days for standard delivery.",
+        "Do you offer expedited shipping?": "Yes, we offer expedited shipping options at an additional cost."
+      }
+    }
+  ]
+}

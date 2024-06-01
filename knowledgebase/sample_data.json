@@ -4,14 +4,45 @@
       "context": "return policy",
       "qa_pairs": {
         "What is your return policy?": "Our return policy allows returns within 30 days of purchase. Please ensure the item is in its original condition.",
-        "Can I return an item after 30 days?": "Unfortunately, returns are not accepted after 30 days from the date of purchase."
+        "Can I return an item after 30 days?": "Unfortunately, returns are not accepted after 30 days from the date of purchase.",
+        "Do I need a receipt to return an item?": "Yes, a receipt or proof of purchase is required for all returns.",
+        "Are there any items that cannot be returned?": "Yes, clearance items and personalized products cannot be returned."
       }
     },
     {
       "context": "shipping information",
       "qa_pairs": {
         "How long does shipping take?": "Shipping typically takes 5-7 business days for standard delivery.",
-        "Do you offer expedited shipping?": "Yes, we offer expedited shipping options at an additional cost."
+        "Do you offer expedited shipping?": "Yes, we offer expedited shipping options at an additional cost.",
+        "Can I track my order?": "Yes, once your order is shipped, you will receive a tracking number via email.",
+        "What are the shipping costs?": "Shipping costs vary based on the shipping method selected and the destination. You can view the shipping costs during checkout."
+      }
+    },
+    {
+      "context": "product details",
+      "qa_pairs": {
+        "What materials are used in your products?": "Our products are made from high-quality materials including cotton, polyester, and blends.",
+        "Do you offer product warranties?": "Yes, we offer a one-year warranty on all our electronic products.",
+        "Can I find product dimensions on your website?": "Yes, product dimensions are listed in the product description section of each item.",
+        "Are your products eco-friendly?": "Yes, we are committed to sustainability and offer a range of eco-friendly products."
+      }
+    },
+    {
+      "context": "order issues",
+      "qa_pairs": {
+        "What should I do if I receive a damaged item?": "If you receive a damaged item, please contact our customer support within 48 hours of delivery to initiate a return or exchange.",
+        "I received the wrong item, what should I do?": "If you received the wrong item, please contact our customer support with your order details, and we will assist you in correcting the issue.",
+        "My order hasn't arrived, what should I do?": "If your order hasn't arrived within the estimated delivery time, please contact our customer support for assistance.",
+        "Can I cancel my order after it has been placed?": "You can cancel your order within 24 hours of placing it. After that, we cannot guarantee cancellation as the order might already be processed."
+      }
+    },
+    {
+      "context": "payment issues",
+      "qa_pairs": {
+        "What payment methods do you accept?": "We accept Visa, MasterCard, American Express, and PayPal.",
+        "Is it safe to use my credit card on your website?": "Yes, we use secure encryption to ensure that your payment information is safe.",
+        "Can I use multiple payment methods for one order?": "Currently, we only accept one payment method per order.",
+        "What should I do if my payment is declined?": "If your payment is declined, please check your payment details and try again, or contact your bank for more information."
       }
     }
   ]

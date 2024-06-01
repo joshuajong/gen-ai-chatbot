@@ -19,7 +19,7 @@ class ChatBot:
       for question, answer in context["qa_pairs"].items():
         if user_input.lower() in question.lower():
           return answer
-    return None
+    return None 
   
   def generate_response(self, user_prompt):
     search_knowledge_base_for_best_match = self.search_knowledge_base_for_best_match(user_prompt)

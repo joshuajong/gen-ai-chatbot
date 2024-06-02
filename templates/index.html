@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Support App</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Customer Support</h1>
+    <form id="support-form">
+        <input type="text" id="message" placeholder="Enter your question here" required>
+        <button type="submit">Send</button>
+    </form>
+    <div id="response"></div>
+
+    <script>
+        document.getElementById('support-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          var message = document.getElementById('message').value;
+
+          fetch('/support', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ message: message }),
+          })
+          .then(response => response.json())
+          .then(data => {
+            document.getElementById('response').innerText = data.response;
+          })
+          .catch(error => console.error('Error:', error));
+        });
+    </script>
+</body>
+</html>

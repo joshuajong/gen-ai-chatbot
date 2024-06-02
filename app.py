@@ -1,9 +1,7 @@
-from openai import OpenAI
+from flask import Flask, request, jsonify, render_template
 from dotenv import load_dotenv
 import os
-import pandas as pd
-import csv
-from chatbot.chatbot import *
+from chatbot.chatbot import ChatBot
 
 # Load environment variables from .env file
 load_dotenv()
@@ -18,18 +16,18 @@ general_context = "We are a customer support service for an online retail store.
 
 chatbot = ChatBot(knowledge_source, api_key, general_context)
 
-def main():
-  print("Welcome to the Customer Support Chatbot!")
-  print("Type 'exit' to end the conversation.")
-  
-  while True:
-    user_input = input("You: ")
-    if user_input.lower() == 'exit':
-      print("Chatbot: Thank you for using our customer support. Have a great day!")
-      break
-    
-    response = chatbot.generate_response(user_input)
-    print(f"Chatbot: {response}")
+app = Flask(__name__, static_folder='static', template_folder='templates')
 
-if __name__ == "__main__":
-  main()
+
+@app.route('/')
+def home():
+  return render_template('index.html')
+
+@app.route('/support', methods=['POST'])
+def support():
+  user_message = request.json.get('message')
+  response = chatbot.generate_response(user_message)
+  return jsonify({'response': response})
+
+if __name__ == '__main__':
+  app.run(debug=True, port=5001)

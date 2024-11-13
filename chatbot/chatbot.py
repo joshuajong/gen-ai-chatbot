@@ -62,12 +62,12 @@ class ChatBot:
       # closest_match = self.weaviate_client.search_for_closest_match(user_prompt)
       # if closest_match:
       #   return closest_match
-      prompt = self.general_context + "\n\nUser: " + user_prompt + "\n\Customer Support: "
+      # prompt = self.general_context + "\n\nUser: " + user_prompt + "\n\Customer Support: "
       response = self.client.chat.completions.create(
         messages=[
           {
             "role": "user",
-            "content": prompt,
+            "content": user_prompt,
             "stop": ["User:", "Customer Support:"],
           }
         ],
